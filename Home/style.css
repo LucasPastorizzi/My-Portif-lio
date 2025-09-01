@@ -45,7 +45,7 @@ body{
    
  }
  header a:hover{
-   color: #fff;
+   color: rgb(146, 95, 0);
    transform: scale(1.05);
 
  }
@@ -66,7 +66,7 @@ body{
  font-size: 18px;
  font-weight: 600;
  padding: 10px 40px;
- background-color: blue;
+ background-color: rgb(146, 95, 0);
  border: 0;
  border-radius: 30px;
  cursor: pointer;
@@ -78,7 +78,7 @@ body{
 
   .btn-contato button:hover{
 
-   box-shadow: 0px 0px 8px #3424c2;
+   box-shadow: 0px 0px 8px #5f4848;
    transform: scale(1.05 );
  }
 
@@ -87,7 +87,7 @@ body{
 
 
  section.topo-do-site{
-  padding: 40px 4%;
+  padding: 150px 4%;
  }
 
 .img-topo-site img{
@@ -108,10 +108,19 @@ section.img-topo-site .flex{
 
 .topo-do-site h1{
   color: #fff;
-  font-size: 42px;
+  font-size: 100px;
   line-height: 40px;
 
 }
+
+.topo-do-site h2{
+  color: #fff;
+  font-size: 25px;
+
+  
+
+}
+
 .topo-do-site .txt-topo-site p{
   color: #fff;
   margin: 40px 0;
@@ -132,4 +141,167 @@ section.img-topo-site .flex{
 .topo-do-site .img-topo-site img{
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+/* Ajuste para empilhar h1 e h2 verticalmente */
+section.topo-do-site .interface .flex {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt-topo-site {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espaço entre h1, h2, p e botão */
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size:  80px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: none;
+}
+
+.topo-do-site h2 {
+  color: rgb(255, 140, 0); /* laranja */
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 0 5px rgb(255, 140, 0);
+}
+
+/* Parágrafo */
+.topo-do-site p {
+  color: #cfd8dc;
+  font-size: 18px;
+  margin: 20px 0 30px 0;
+  line-height: 1.5;
+}
+
+/* Botão contato */
+.btn-contato button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 45px;
+  background-color: rgb(255, 140, 0);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #000;
+  box-shadow: 0 0 10px rgb(255, 140, 0);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0 0 20px rgb(255, 140, 0);
+  transform: scale(1.1);
+}
+
+/* Imagem topo */
+.img-topo-site {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.img-topo-site img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgb(255, 140, 0);
+  box-shadow: 0 0 20px rgb(255, 140, 0);
+  animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+/* Animação flutuar */
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Skills - estilo conforme seu CSS anterior */
+.skills {
+  background-color: #0a0a0a;
+  padding: 80px 4%;
+  color: #cfd8dc;
+  font-family: "Poppins", sans-serif;
+}
+
+.skills .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.skills h2 {
+  grid-column: 1 / -1;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgb(255, 140, 0);
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
+
+.skill-box {
+  background-color: #121212;
+  border: 2px solid rgb(255, 140, 0);
+  border-radius: 16px;
+  padding: 35px 30px;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-box:hover {
+  box-shadow: 0 0 30px rgb(255, 140, 0);
+  border-color: rgb(255, 180, 50);
+  transform: translateY(-8px);
+}
+
+.skill-box h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: rgb(255, 180, 50);
+  border-bottom: 2px solid rgb(255, 140, 0);
+  padding-bottom: 10px;
+  
+}
+
+.skill-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skill-box ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #ddd;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.skill-box ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(255, 140, 0);
+  font-size: 1.5rem;
+  line-height: 1;
 }
