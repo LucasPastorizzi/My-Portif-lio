@@ -173,7 +173,7 @@ section.topo-do-site .interface .flex {
   font-size: 28px;
   font-weight: 600;
   margin: 0;
-  text-shadow: 0 0 5px rgb(255, 140, 0);
+  text-shadow: 0 0 3px rgb(255, 140, 0);
 }
 
 /* Parágrafo */
@@ -194,7 +194,7 @@ section.topo-do-site .interface .flex {
   border-radius: 30px;
   cursor: pointer;
   color: #000;
-  box-shadow: 0 0 10px rgb(255, 140, 0);
+  box-shadow: 0 0 2px rgb(255, 140, 0);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -214,8 +214,8 @@ section.topo-do-site .interface .flex {
   height: 350px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgb(255, 140, 0);
-  box-shadow: 0 0 20px rgb(255, 140, 0);
+  border: 2px solid rgb(255, 140, 0);
+  box-shadow: 0 0 5px rgb(255, 140, 0);
   animation: flutuar 3s ease-in-out infinite alternate;
 }
 
@@ -257,7 +257,7 @@ section.topo-do-site .interface .flex {
 
 .skill-box {
   background-color: #121212;
-  border: 2px solid rgb(255, 140, 0);
+
   border-radius: 16px;
   padding: 35px 30px;
   box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
@@ -265,7 +265,7 @@ section.topo-do-site .interface .flex {
 }
 
 .skill-box:hover {
-  box-shadow: 0 0 30px rgb(255, 140, 0);
+  box-shadow: 0 0 2px rgb(255, 140, 0);
   border-color: rgb(255, 180, 50);
   transform: translateY(-8px);
 }
@@ -274,7 +274,7 @@ section.topo-do-site .interface .flex {
   font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 25px;
-  color: rgb(255, 180, 50);
+  color: rgb(146, 95, 0);
   border-bottom: 2px solid rgb(255, 140, 0);
   padding-bottom: 10px;
   
@@ -301,7 +301,53 @@ section.topo-do-site .interface .flex {
   position: absolute;
   left: 0;
   top: 0;
-  color: rgb(255, 140, 0);
+  color:  rgb(146, 95, 0);
   font-size: 1.5rem;
   line-height: 1;
 }
+
+
+.about-me {
+  background-color: #121212;
+  padding: 80px 4%;
+  color: #cfd8dc;
+}
+
+.about-me h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgb(255, 140, 0);
+  margin-bottom: 50px;
+  text-align: center;
+  text-shadow: 0 0 2px rgb(255, 140, 0);
+}
+
+.about-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.about-image {
+  flex: 1 1 50%;
+  text-align: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px; /* ou 0 para cantos retos */
+  border: 4px solid rgb(255, 140, 0);
+  box-shadow: 0 0 20px rgb(255, 140, 0);
+}
+.about-text {
+  flex: 1 1 45%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cfd8dc;
+}
+
+
