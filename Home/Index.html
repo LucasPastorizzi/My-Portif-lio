@@ -30,10 +30,10 @@
 
             <nav class="navbar-desktop">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#topo-do-site">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#projects" id="nav-projects">Projetos</a></li>
                 </ul>
             </nav>
 
@@ -144,7 +144,9 @@
 </section>
 
 
-<section class="projects">
+
+
+<section id="projects" class="projects active">
   <div class="container interface">
     <h2>Meus Projetos</h2>
     <div class="projects-grid">
@@ -178,6 +180,7 @@
     </div>
   </div>
 </section>
+
 
 
 <section id="contato" class="contact-section">
@@ -282,8 +285,36 @@
   )
 
 
+       ScrollReveal().reveal('#projects',{
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+  }
+  )
 
 
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const projectsSection = document.getElementById('projects');
+    const projectsLink = document.getElementById('nav-projects');
+
+    // Inicialmente, a seção está oculta (conforme seu CSS)
+    // Se quiser que já apareça ao carregar, remova a classe 'projects' e adicione 'projects active' no HTML
+
+    projectsLink.addEventListener('click', (e) => {
+      e.preventDefault(); // evita o comportamento padrão do link
+
+      // Adiciona a classe 'active' para mostrar a seção com transição
+      projectsSection.classList.add('active');
+
+      // Rola suavemente até a seção
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
 
 
 
