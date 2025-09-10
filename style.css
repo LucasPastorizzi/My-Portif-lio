@@ -1283,6 +1283,15 @@ header .interface {
   transform: scale(1.05);
 }
 
+.logo img{
+  width: 80px;       /* largura fixa */
+  height: 80px;      /* altura fixa */
+  object-fit: cover;  /* corta a imagem sem distorcer */
+  border-radius: 350%; /* deixa redonda */
+  display: block;
+  margin: 0 auto;   
+}
+
 
 
 
